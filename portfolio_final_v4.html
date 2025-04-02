@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio_final_v3.css"> 
+</head>
+
+<body class="dark"> 
+    <header>
+        <h1>khoi trai tim</h1>
+        <p>bahut</p>
+    </header>
+
+    <div class="loader">
+        <p>I Love</p>
+        <div class="words">
+            <span class="word">FC Bayern</span>
+            <span class="word">Bundesliga</span>
+            <span class="word">Allianz Arena</span>
+            <span class="word">Mia San Mia</span>
+            <span class="word">Champions League</span>
+        </div>
+    </div>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>shipper</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <p>hair salon charging 200k</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: tranchianh@gmail.com/p>
+    </section>
+
+    <footer>
+        <p>Connect with me on social media:</p>
+        <a href="#">dung anh</a>
+        <a href="#">GitHub</a>
+    </footer>
+
+    <button id="btn">LIGHT</button> 
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            document.body.classList.toggle('light');
+            btn.textContent = document.body.classList.contains('dark') ? 'LIGHT' : 'DARK';
+        });
+    </script>
+</body>
+
+</html>
